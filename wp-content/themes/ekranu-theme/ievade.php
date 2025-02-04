@@ -36,7 +36,7 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        .page-title{
+        .page-title {
             font-size: 30px;
             width: 20%;
             font-weight: bold;
@@ -63,10 +63,11 @@
             margin-right: 10px;
             margin-left: 20px;
         }
-        .iconbig{
+        .iconbig {
             height: 80%;
             color: #14213D;
         }
+
         /* Sidebar */
         .sidebar {
             min-width: 15%;
@@ -152,7 +153,6 @@
             padding: 2px;
             margin-left: 15%;
             min-width: 1195px;
-            /*flex-wrap: wrap;*/
             flex-direction: column;
             min-height: 100vh;
             height: auto;
@@ -180,14 +180,14 @@
             height: 70%;
         }
 
-        .header-button{
-            background-color: white; /* Default white background */
-            color: #14213D; /* Default text color */
+        .header-button {
+            background-color: white;
+            color: #14213D;
             font-size: 14px;
             font-weight: bold;
-            border: 2px solid #d9d9d9; /* Light border */
+            border: 2px solid #d9d9d9;
             margin-left: 10px;
-            border-radius: 4px; /* Subtle rounding */
+            border-radius: 4px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -197,23 +197,23 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .header-button .buttonicon{
-            height: 30px; /* Icon size */
+        .header-button .buttonicon {
+            height: 30px;
             width: 30px;
             margin-right: 8px;
-            color: inherit; /* Matches current text color */
+            color: inherit;
         }
 
         /* Hover styles for each button */
         .green-hover:hover {
-            background-color: #e0f7e4; /* Light green */
+            background-color: #e0f7e4;
             color: #28a745;
             border-color: #28a745;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             transition: ease-in-out 0.2s;
         }
         .green-hover:active {
-            background-color: #28a745; /* Light green */
+            background-color: #28a745;
             color: #e0f7e4;
             border-color: #28a745;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -221,7 +221,7 @@
         }
 
         .gray-hover:hover {
-            background-color: #f7f7f7; /* Light gray */
+            background-color: #f7f7f7;
             color: #6c757d;
             border-color: #6c757d;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -229,7 +229,7 @@
         }
 
         .blue-hover:hover {
-            background-color: #e0f1ff; /* Light blue */
+            background-color: #e0f1ff;
             color: #007bff;
             border-color: #007bff;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -237,24 +237,25 @@
         }
 
         .yellow-hover:hover {
-            background-color: #fff3d0; /* Light yellow */
+            background-color: #fff3d0;
             color: #ffd40c;
             border-color: #ffd40c;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             transition: ease-in-out 0.2s;
         }
         .headerbutton:active {
-            background-color: #ffd40c; /* Subtle blue to indicate active */
+            background-color: #ffd40c;
             color: #fff3d0;
             border-color: #fff3d0;
             transition: ease-in-out 0.1s;
         }
+
         /* Main Section */
         .container {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px; /* Space between items */
-            justify-content: center; /* Center forms horizontally */
+            gap: 20px;
+            justify-content: center;
             height: auto;
             padding: 2px;
             min-height: 70vh;
@@ -278,8 +279,8 @@
         }
 
         .form-container {
-            flex: 1 1 calc(33.33% - 20px); /* 33.33% width minus gap */
-            min-width: 300px; /* Prevent shrinking below a certain size */
+            flex: 1 1 calc(33.33% - 20px);
+            min-width: 300px;
             max-width: 350px;
             background-color: #f9f9f9;
             border-radius: 8px;
@@ -316,17 +317,18 @@
             resize: none;
             height: 100px;
         }
-        .icons{
+        .icons {
             width: 100%;
             height: 40px;
             display: flex;
             justify-content: space-evenly;
         }
+
         /* Trashcan Button Style */
         .trashcan-button {
             background-color: transparent;
             border: none;
-            color: #14213D; /* Default color */
+            color: #14213D;
             cursor: pointer;
             transition: 0.3s ease;
             padding: 10px;
@@ -337,15 +339,15 @@
         }
 
         .trashcan-button:hover {
-            color: #ff4d4d; /* Red on hover */
+            color: #ff4d4d;
             background-color: #fbc6c6;
         }
         .fullscreen-button {
             background-color: transparent;
             border: none;
-            color: #14213D; /* Default color */
+            color: #14213D;
             cursor: pointer;
-            transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+            transition: background-color 0.3s ease, color 0.3s ease;
             padding: 10px;
             width: auto;
             border-radius: 4px;
@@ -370,7 +372,7 @@
             max-height: none;
         }
         .fullscreen-button.fullscreen-active svg {
-            transform: rotate(45deg); /* Example effect: rotate the icon */
+            transform: rotate(45deg);
             transition: 0.3s;
             max-width: 20px;
             max-height: 20px;
@@ -378,7 +380,7 @@
         .hidden {
             background-color: transparent;
             border: none;
-            color: #14213D; /* Default color */
+            color: #14213D;
             cursor: pointer;
             transition: 0.3s ease;
             padding: 10px;
@@ -452,7 +454,6 @@
             color: gray;
             text-align: center;
             margin-top: 10%;
-
         }
         .notification-container {
             position: fixed;
@@ -462,7 +463,7 @@
         }
 
         .notification {
-            background-color: #f44336; /* Red for error */
+            background-color: #f44336;
             color: white;
             padding: 15px 20px;
             border-radius: 5px;
@@ -511,7 +512,7 @@
             h2 {
                 display: none;
             }
-        };
+        }
         .form-container-layout {
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
@@ -523,7 +524,7 @@
             max-width: 1192px;
             margin-top: 2px;
             margin-bottom: 2px;
-            padding: 20px; /* Adds some spacing around the grid */
+            padding: 20px;
             width: 100%;
         }
         .dropdown-container {
@@ -545,7 +546,7 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             font-size: 16px;
-            width: 200px; /* Adjust width to match design */
+            width: 200px;
         }
         .image-preview {
             margin-top: 10px;
@@ -582,7 +583,7 @@
 
         .overlay-content {
             position: relative;
-            z-index: 1; /* Ensure the content is above the overlay background */
+            z-index: 1;
         }
 
         .image-overlay img {
@@ -594,41 +595,6 @@
         .overlay-content img {
             max-width: 50%;
             max-height: 50%;
-        }
-        .notification-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
-        .notification {
-            background-color: #f44336; /* Red for error */
-            color: white;
-            padding: 15px 20px;
-            border-radius: 5px;
-            margin-top: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            opacity: 0;
-            animation: fadeInOut 4s forwards;
-        }
-
-        @keyframes fadeInOut {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            10% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
         }
     </style>
 </head>
@@ -776,6 +742,7 @@
             const imageOverlay = document.getElementById('imageOverlay');
             const closeOverlay = document.getElementById('closeOverlay');
             const headerFullscreenButton = document.getElementById('header-fullscreen-button');
+            const headerHideAllButton = document.getElementById('header-hide-all');
 
             if (!addButton || !container || !numbersDisplay || !initialForm) {
                 console.error('Critical elements are missing in the DOM.');
@@ -790,42 +757,67 @@
 
                     const formContainer = fullscreenButton.closest('.form-container');
                     const formId = formContainer ? formContainer.dataset.formId : 'Unknown';
+
+                    if (fullscreenButton.classList.contains('fullscreen-active')) {
+                        formContainer.classList.add('fullscreen-mode');
+                    } else {
+                        formContainer.classList.remove('fullscreen-mode');
+                    }
+
                     console.log(`Fullscreen toggled on form container id: ${formId}`);
                 }
             });
 
-            // Fullscreen toggle for all forms using the header button
+            // Global Fullscreen Button
             if (headerFullscreenButton) {
                 headerFullscreenButton.addEventListener('click', () => {
                     const formContainers = container.querySelectorAll('.form-container');
-                    const isFullscreenActive = headerFullscreenButton.classList.toggle('fullscreen-active');
+                    const isGlobalFullscreen = headerFullscreenButton.classList.toggle('fullscreen-active');
 
                     formContainers.forEach((formContainer) => {
                         const fullscreenButton = formContainer.querySelector('#fullscreen-entry');
                         if (fullscreenButton) {
-                            if (isFullscreenActive) {
+                            if (isGlobalFullscreen) {
                                 fullscreenButton.classList.add('fullscreen-active');
+                                formContainer.classList.add('fullscreen-mode');
                             } else {
                                 fullscreenButton.classList.remove('fullscreen-active');
+                                formContainer.classList.remove('fullscreen-mode');
                             }
                         }
                     });
 
-                    console.log(`Header fullscreen button toggled. State: ${isFullscreenActive ? 'Active' : 'Inactive'}`);
+                    console.log(`Header fullscreen button toggled. State: ${isGlobalFullscreen ? 'Active' : 'Inactive'}`);
                 });
             }
 
-            // Hidden button functionality
-            const hiddenButton = document.getElementById('hidden-entry');
-            const formContainer = document.querySelector('.form-container');
+            // Global Hide-All Button
+            if (headerHideAllButton) {
+                headerHideAllButton.addEventListener('click', () => {
+                    const formContainers = container.querySelectorAll('.form-container');
+                    const isGlobalHidden = headerHideAllButton.classList.toggle('hidden-active');
 
-            if (!hiddenButton) {
-                console.error('Hidden button not found in the DOM.');
-            } else {
-                hiddenButton.addEventListener('click', () => {
-                    hiddenButton.classList.toggle('hidden-active');
+                    formContainers.forEach((formContainer) => {
+                        const hideButton = formContainer.querySelector('#hidden-entry');
+                        if (hideButton) {
+                            hideButton.classList.toggle('hidden-active', isGlobalHidden);
+                            formContainer.style.opacity = isGlobalHidden ? '0.3' : '1';
+                            formContainer.style.pointerEvents = isGlobalHidden ? 'none' : 'auto';
+                        }
+                    });
 
-                    if (hiddenButton.classList.contains('hidden-active')) {
+                    console.log(`Header hide all button toggled. State: ${isGlobalHidden ? 'Active' : 'Inactive'}`);
+                });
+            }
+
+            // Hide Button Logic for Individual Forms
+            container.addEventListener('click', (event) => {
+                const hideButton = event.target.closest('#hidden-entry');
+                if (hideButton) {
+                    const formContainer = hideButton.closest('.form-container');
+                    hideButton.classList.toggle('hidden-active');
+
+                    if (hideButton.classList.contains('hidden-active')) {
                         formContainer.style.opacity = '0.3';
                         formContainer.style.pointerEvents = 'none';
                     } else {
@@ -833,42 +825,9 @@
                         formContainer.style.pointerEvents = 'auto';
                     }
 
-                    console.log('Hidden button clicked. Current classes:', hiddenButton.className);
-                });
-
-                document.addEventListener('click', (event) => {
-                    const target = event.target.closest('#hidden-entry');
-                    if (target) {
-                        target.classList.toggle('hidden-active');
-
-                        if (target.classList.contains('hidden-active')) {
-                            formContainer.style.opacity = '0.3';
-                            formContainer.style.pointerEvents = 'none';
-                        } else {
-                            formContainer.style.opacity = '1';
-                            formContainer.style.pointerEvents = 'auto';
-                        }
-
-                        console.log('Toggled Hidden-active via delegation. Current classes:', target.className);
-                    }
-                });
-            }
-
-            let notificationContainer = document.getElementById('notificationContainer');
-            if (!notificationContainer) {
-                notificationContainer = document.createElement('div');
-                notificationContainer.id = 'notificationContainer';
-                notificationContainer.className = 'notification-container';
-                document.body.appendChild(notificationContainer);
-            }
-
-            function showNotification(message) {
-                const notification = document.createElement('div');
-                notification.className = 'notification';
-                notification.textContent = message;
-                notificationContainer.appendChild(notification);
-                notification.addEventListener('animationend', () => notification.remove());
-            }
+                    console.log(`Hidden button toggled for form ${formContainer.dataset.formId}`);
+                }
+            });
 
             function createForm() {
                 formCount++;
@@ -893,29 +852,6 @@
                 }
                 if (label) label.setAttribute('for', `status-${uniqueId}`);
 
-                if (imageInput) {
-                    imageInput.addEventListener('change', (event) => {
-                        const file = event.target.files[0];
-                        if (file) {
-                            const reader = new FileReader();
-                            reader.onload = (e) => {
-                                if (previewImage) {
-                                    previewImage.src = e.target.result;
-                                    previewImage.style.display = 'block';
-                                }
-                            };
-                            reader.readAsDataURL(file);
-                        }
-                    });
-                }
-
-                if (previewImage) {
-                    previewImage.addEventListener('click', () => {
-                        if (overlayImage) overlayImage.src = previewImage.src;
-                        if (imageOverlay) imageOverlay.style.display = 'flex';
-                    });
-                }
-
                 return newForm;
             }
 
@@ -926,16 +862,6 @@
                     word = 'ieraksts';
                 }
                 numbersDisplay.textContent = `${formCount} ${word}`;
-
-                const emptyMessage = document.getElementById('emptyMessage');
-                if (emptyMessage) emptyMessage.style.display = formCount === 0 ? 'block' : 'none';
-            }
-
-            function adjustLayout() {
-                const formContainers = container.querySelectorAll('.form-container');
-                formContainers.forEach((form) => {
-                    form.style.flexBasis = 'calc(33.33% - 20px)';
-                });
             }
 
             if (initialForm) initialForm.style.display = 'none';
@@ -945,13 +871,12 @@
                 const selectedScreen = screenDropdown ? screenDropdown.value : null;
 
                 if (!selectedScreen) {
-                    showNotification('Izvēlieties ekrānu, lai pievienot ierakstu!');
+                    console.warn('Izvēlieties ekrānu, lai pievienot ierakstu!');
                     return;
                 }
 
                 const newForm = createForm();
                 container.appendChild(newForm);
-                adjustLayout();
                 updateFormCount();
             });
 
@@ -960,7 +885,6 @@
                     const formToRemove = event.target.closest('.form-container');
                     if (formToRemove) {
                         formToRemove.remove();
-                        adjustLayout();
                         updateFormCount();
                     }
                 }
@@ -988,17 +912,6 @@
                     if (imageOverlay) imageOverlay.style.display = 'none';
                 });
             }
-
-            const sidebarItems = document.querySelectorAll('.sidebar .menu li');
-
-            sidebarItems.forEach((item) => {
-                item.addEventListener('click', () => {
-                    const href = item.getAttribute('data-href');
-                    if (href) {
-                        window.location.href = href;
-                    }
-                });
-            });
         });
     </script>
     <div id="imageOverlay" class="image-overlay" style="display: none;">

@@ -79,7 +79,7 @@
         }
 
         .sidebar {
-            width: 650px;
+            width: 750px;
             background: rgba(255, 255, 255, 0.95);
             padding-top: 20px;
             padding-right: 10px;
@@ -94,6 +94,8 @@
         }
 
         .header {
+            margin-top: 30px;
+            width: 90%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -101,7 +103,7 @@
         }
 
         .logo {
-            width: 260px;
+            width: 50%;
             height: auto;
             transition: opacity 0.3s ease;
         }
@@ -130,7 +132,7 @@
             background: white;
             border: 2px solid #002366;
             border-radius: 15px;
-            padding: 8px;
+            padding: 3px;
             display: flex;
             flex-direction: column;
         }
@@ -138,7 +140,8 @@
         .changes-container h2 {
             color: #002366;
             font-size: 24px;
-            margin-bottom: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             text-align: center;
         }
 
@@ -173,7 +176,7 @@
         .nameday-section h2 {
             color: #002366;
             font-size: 32px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             text-align: center;
         }
 
@@ -208,6 +211,9 @@
         }
 
         .logo-bottom.visible {
+            margin-bottom: 5%;
+            margin-top: -5%;
+            position: relative;
             opacity: 1;
         }
     </style>
@@ -318,7 +324,7 @@
             })
             .catch(error => {
                 console.error('Error fetching image:', error); // Debugging
-                changesSection.textContent = 'Nav datu, viss kā ierasts :)';
+                changesSection.textContent = 'Nav Izmaiņu';
                 adjustLogoPosition(changesSection.clientHeight);
                 showLogoBottom(); // Ensure logo-bottom is visible when no image is found
             });
@@ -330,29 +336,32 @@
         const logo = document.querySelector('.logo');
         const logoBottom = document.querySelector('.logo-bottom');
         const datetime = document.querySelector('.datetime');
+        const date = document.querySelector('.date');
         const time = document.querySelector('.time');
         const names = document.querySelector('.nameday-section');
         console.log(`Changes section height: ${changesSectionHeight}px`); // Debugging
 
-        if (changesSectionHeight < 400) {
-            console.log('Changes section height is less than 400px. Adjusting layout...'); // Debugging
+        if (changesSectionHeight < 500) {
+            console.log('Changes section height is less than 500px. Adjusting layout...'); // Debugging
             logo.style.display = 'none';
             showLogoBottom();
             datetime.style.justifyContent = 'center';
-            datetime.style.scale = '1.5';
+            datetime.style.scale = '1.1';
             time.style.display = 'flex';
             time.style.justifyContent = 'center';
+            date.style.textAlign = 'center';
             names.style.position = 'relative';
-            names.style.bottom = '-5%'; // Add this line to set the bottom attribute
+            names.style.bottom = '4%'; // Add this line to set the bottom attribute
         } else {
-            console.log('Changes section height is 400px or more. Resetting layout...'); // Debugging
+            console.log('Changes section height is 500px or more. Resetting layout...'); // Debugging
             logo.style.display = 'block';
             logoBottom.classList.remove('visible');
             logoBottom.style.scale = '0';
             datetime.style.justifyContent = 'flex-end';
-            datetime.style.scale = '0.8';
-            names.style.position = ''; // Reset the position
-            names.style.bottom = ''; // Reset the bottom attribute
+            date.style.textAlign = 'right';
+            datetime.style.scale = '0.9';
+            names.style.position = 'relative'; // Reset the position
+            names.style.bottom = '-0.7%'; // Reset the bottom attribute
         }
     }
 
